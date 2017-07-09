@@ -1,45 +1,15 @@
-       <div class="header">
-            <a href="../templates/homepage.html" title="Pandademo-Die Krone der Schöpfung">
-                <img class="header__logo" src="../img/poldi.png"/>
-            </a>
-            <div class="header__title-wrapper">
-                <dh1 class="header__title">Pandademo</dh1>
-                <div class="header__claim">
-                    <img src="../img/claim.png"/>
-                </div>
-            </div>
-            <div id="mobile-menu-button" class="header__mobile-menu-button"></div>
-
-            <nav class="main-navigation">
-                <ul class="main-navigation__list">
-                    <li class="main-navigation__item main-navigation__item--active">
-                        <a class="main-navigation__link" href="/" title="Zu den Pandabildern">Pandabilder</a>
-                        <ul class="main-navigation__sub-menu">
-                            <li class="main-navigation__sub-item">
-                                <a class="main-navigation__sub-link" href="/fressende-pandas"
-                                   title="Zu den fressenden Pandas">Fressende Pandas</a>
-                            </li>
-                            <li class="main-navigation__sub-item">
-                                <a class="sub-navigation__sub-link" href="/spielende-pandas"
-                                   title="Zu den spielenden Pandas">Spielende Pandas</a>
-                            </li>
-                            <li class="main-navigation__sub-item">
-                                <a class="main-navigation__sub-link" href="/faule-pandas"
-                                   title="Zu den faulen Pandas">Faule Pandas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="https://www.youtube.com/results?search_query=pandas" title="Zu den Pandavideos">Pandavideos</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="https://giphy.com/search/panda"
-                           title="Zu der Pandagalerie">Pandagalerie</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link" href="https://www.google.de/search?=panda" title="Zu Panda & Mehr">Panda
-                            & Mehr</a>
-                    </li>
-                </ul>
-            </nav>
+<div class="header">
+    <a href="../templates/homepage.html" title="Pandademo-Die Krone der Schöpfung">
+        <img class="header__logo" src="../img/poldi.png"/>
+    </a>
+    <div class="header__title-wrapper">
+        <h1 class="header__title">Pandademo</h1>
+        <div class="header__claim">
+            <img src="../img/claim.png"/>
         </div>
+    </div>
+    <div id="mobile-menu-button" class="header__mobile-menu-button"></div>
+
+    {% include '/main-navigation.html.twig' %}
+
+</div>

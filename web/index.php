@@ -2,9 +2,7 @@
 require_once '../vendor/autoload.php';
 
 $loader = new Twig_Loader_Filesystem('templates');
-$twig = new Twig_Environment($loader, array(
-    'cache' => '../cache',
-));
+$twig = new Twig_Environment($loader);
 
 if ($_SERVER['REQUEST_URI'] == "/") $template = 'index';
 else $template = substr($_SERVER['REQUEST_URI'], 1);

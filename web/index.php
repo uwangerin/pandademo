@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_URI'] == '/') {
 	$teasers[] = array('file'  => 'suess1.jpeg', 'title' => 'Süßer Panda');
 	$teasers[] = array('file'  => 'spiel3.jpeg', 'title' => 'Spielender Panda');
 	$teasers[] = array('file'  => 'suess2.jpeg', 'title' => 'Fauler Panda');
-	$teasers[] = array('file'  => 'suess1.jpg', 'title' => 'Sportlicher Panda');
+	$teasers[] = array('file'  => 'suess1.jpeg', 'title' => 'Sportlicher Panda');
 
 	$sideteasers = array();
 	$sideteasers[] = array('file'  => 'panda.jpg', 'title' => 'Süßer Panda');

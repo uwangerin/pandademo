@@ -1,0 +1,64 @@
+.mobile-menu {
+    display: none;
+    font-size: $font-extra-large;
+    height: auto;
+    width: 100vw;
+    background-color: $white;
+    z-index: $z-low;
+    text-align: center;
+    position: fixed;
+    top: 60px;
+
+    @media screen and (min-width: $break-min-medium) {
+        display: none;
+    }
+
+    &__list {
+        @extend .clearfix;
+        list-style: none;
+        z-index: $z-high;
+        padding-left: 0;
+        float: none;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        bottom: 3px;
+        width: 90vw;
+    }
+
+    &__item {
+        float: none;
+        padding: 10px;
+        font-weight: bold;
+        font-size: $font-extra-large;
+        border-bottom: $border-light;
+
+        &:last-child {
+            border: none;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        > a:hover {
+            text-decoration: none;
+            color: $orange;
+        }
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        z-index: $z-high + 2;
+        color: $green;
+
+        &--active {
+            color: $orange;
+        }
+    }
+
+    &--show {
+        display: block;
+    }
+}

@@ -1,0 +1,115 @@
+/*
+.modal-view {
+    form {
+        label {
+            font-size: 10px;
+            line-height: 14px;
+            margin-bottom: 0;
+        }
+
+        input {
+            background-color: $very-light-grey;
+            margin-bottom: 1.5vh;
+            width: 84vw;
+        }
+
+        select {
+            font-size: 2vh;
+            margin-bottom: 1.5vh;
+            background-color: $very-light-grey;
+        }
+
+        option {
+            text-align: center;
+        }
+
+        textarea {
+            width: 84vw;
+            height: 15vw;
+            background-color: $very-light-grey;
+            border: none;
+            margin-bottom: 1.5vh;
+        }
+    }
+
+    .type,
+    .style {
+        width: 42vw;
+        float: left;
+    }
+
+    .type {
+        padding-right: 1vw;
+    }
+
+    .email {
+        span {
+            clear: both;
+            display: block;
+        }
+    }
+
+    .date-headline {
+        text-align: left;
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+        margin-top: 2vh;
+        font-weight: 600;
+        clear: both;
+    }
+
+    .date-select,
+    .time-select {
+        float: left;
+        width: 16vw;
+        padding-right: 1vw;
+        margin-bottom: 2vh;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .plz,
+    .city-part,
+    .city {
+        float: left;
+        width: 31vw;
+        display: block;
+        padding-right: 1vw;
+
+        input {
+            width: 31vw;
+            float: left;
+            display: block;
+        }
+    }
+
+    .plz {
+        width: 20vw;
+
+        input {
+            width: 20vw;
+        }
+    }
+
+
+    .city {
+        padding-right: 0;
+    }
+
+    &#create-event-modal,
+    &#edit-event-modal {
+        overflow-x: hidden;
+        .inner-view {
+            height: 260vw;
+        }
+    }
+}
+
+
+*/

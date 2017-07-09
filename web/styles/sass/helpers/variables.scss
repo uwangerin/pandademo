@@ -1,0 +1,51 @@
+/* Fonts */
+$font-family-main: "Gudea", sans-serif;
+$font-family-special: 'Dancing Script', cursive;
+/* Font sizes */
+$font-extra-small: 0.5rem; // 8px
+$font-small: 0.75rem; // 12px
+$font-normal: 1rem; // 16px
+$font-large: 1.25rem; // 20px
+$font-extra-large: 1.5rem; // 24px
+
+/* Line heights */
+$line-height-mini: 1rem;
+$line-height-extra-small: 1rem;
+$line-height-small: 1rem;
+$line-height-smaller: 1.25rem;
+$line-height-base: 1.438rem;
+$line-height-medium: 1.563rem;
+$line-height-large: 1.875rem;
+
+/* Z-index */
+$z-high: 100;
+$z-low: 10;
+
+/* Breakpoints */
+$break-max-extra-small: 320px;
+$break-max-small: 412px;
+$break-max-medium: 767px;
+$break-max-large: 991px;
+$break-max-extra-large: 1199px;
+
+/* Breakpoints for max */
+$break-min-extra-small: $break-max-extra-small + 1;
+$break-min-small: $break-max-small + 1;
+$break-min-medium: $break-max-medium + 1;
+$break-min-large: $break-max-large + 1;
+$break-min-extra-large: $break-max-extra-large + 1;
+
+// Colors
+$black: #242424;
+$grey-dark: #696969;
+$grey-medium: #898989;
+$grey-light: #c0c0c0;
+$grey-extra-light: #dbdbdb;
+$white: #fff;
+$orange: #ff8c00;
+$green: #228b22;
+$brown: #8b4513;
+
+/* Border */
+$border: 1px solid $grey-medium;
+$border-light: 1px solid $grey-light;

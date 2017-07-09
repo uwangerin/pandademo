@@ -1,0 +1,68 @@
+.clearfix {
+    &::before,
+    &::after {
+        content: " ";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+
+@mixin background-image($image) {
+    background-image: url("../../img/#{$image}");
+}
+
+@mixin background($image) {
+    @include background-image($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    color: transparent;
+}
+
+@mixin section {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $break-max-medium) {
+        margin-bottom: 10px;
+    }
+}
+
+@mixin content-block {
+    @extend %clearfix;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @media screen and (max-width: $break-max-medium) {
+        margin-bottom: 10px;
+    }
+}
+
+@mixin sidebar-block {
+    @extend %clearfix;
+    margin-bottom: 20px;
+}
+
+@mixin title-black-normal {
+    color: $black;
+    font-size: $font-large;
+    line-height: $line-height-base;
+    font-weight: normal;
+}
+
+@mixin title-black-bold {
+    color: $black;
+    font-size: $font-large;
+    line-height: $line-height-base;
+    font-weight: bold;
+}
+
+@mixin teaser-headline {
+    font-weight: bold;
+    font-size: $font-extra-large;
+    text-align: center;
+    margin-bottom: 10px;
+}

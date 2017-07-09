@@ -1,0 +1,53 @@
+.teaser-sidebar {
+    @extend .clearfix;
+    margin: 20px;
+
+    &__list {
+        @extend .clearfix;
+    }
+
+    &__headline {
+        @include teaser-headline;
+    }
+
+    &__single {
+        width: 300px;
+        background-color: $white;
+        padding: 10px;
+        margin-bottom: 10px;
+        float: left;
+        display: inline-block;
+        border: 1px solid $grey-medium;
+        box-sizing: border-box;
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+
+    &__image {
+        & > img {
+            height: 100px;
+        }
+    }
+
+    &__content {
+        height: auto;
+        padding: 10px;
+    }
+
+    &__title {
+        font-family: $font-family-special;
+        font-size: $font-large;
+        text-align: center;
+
+        > a {
+            color: $green;
+
+            &:hover {
+                text-decoration: none;
+                color: $orange;
+            }
+        }
+    }
+}

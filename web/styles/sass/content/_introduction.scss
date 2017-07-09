@@ -1,0 +1,48 @@
+.introduction {
+    padding-top: 20px;
+    text-align: center;
+
+    @media screen and (max-width: $break-max-large) {
+        background-color: $white;
+        padding: 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: bold;
+        padding: 10px 20px 10px 20px;
+        margin: 0;
+
+        @media screen and (max-width: $break-max-large) {
+            padding: 20px 10px 10px 10px;
+        }
+
+        @media screen and (max-width: $break-max-small) {
+            padding: 10px 10px 0 10px;
+            font-size: $font-large;
+            line-height: 1rem;
+        }
+    }
+
+    &__description {
+        font-size: $font-large;
+        line-height: 1.5rem;
+        padding: 0 20px;
+        font-family: $font-family-special;
+
+        @media screen and (max-width: $break-max-large) {
+            padding: 0 10px 10px 10px;
+        }
+
+        @media screen and (max-width: $break-max-medium) {
+            padding: 0 10px 10px 10px;
+        }
+
+        @media screen and (max-width: $break-max-small) {
+            padding: 10px;
+            font-size: $font-normal;
+            line-height: 1rem;
+        }
+    }
+}

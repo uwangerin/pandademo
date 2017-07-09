@@ -1,0 +1,38 @@
+.footer-menu {
+    text-align: center;
+
+    &__list {
+        @extend .clearfix;
+        list-style: none;
+        z-index: $z-high;
+        padding-left: 0;
+        float: none;
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__item {
+        float: left;
+        font-weight: normal;
+        font-size: $font-normal;
+        padding-right: 20px;
+
+        &::before {
+            display: none;
+        }
+
+        > a:hover {
+            text-decoration: none;
+            color: $orange;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: $green;
+
+        &--active {
+            color: $orange;
+        }
+    }
+}

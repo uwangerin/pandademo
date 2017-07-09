@@ -534,80 +534,6 @@ a {
   a:hover {
     text-decoration: underline; }
 
-/*
-.overview {
-    .date {
-        background-color: $light-grey;
-        padding: 1vh 0.8vh 0.5vh 1.3vh;
-
-        @media only all and (min-width: 992px) {
-            padding: 7px 10px 7px 10px;
-            margin-top: -10px;
-        }
-    }
-    .event {
-        border-bottom: 1px solid $light-grey;
-        padding: 2vw;
-        @extend .clearfix;
-        position: relative;
-
-        @media only all and (min-width: 992px) {
-            padding: 15px;
-        }
-
-        .teaser {
-            @extend .clearfix;
-        }
-
-        .teaser-image {
-            width: 20vw;
-            float: left;
-
-            @media only all and (min-width: 992px) {
-                width: 100px;
-            }
-        }
-
-        .teaser-content {
-            width: 74vw;
-            float: left;
-            margin-left: 2vw;
-
-            @media only all and (min-width: 992px) {
-                width: 500px;
-                margin-left: 15px;
-            }
-        }
-
-        .headline {
-            font-weight: 500;
-            font-size: 2.6vh;
-            max-height: 9vh;
-            line-height: 2.9vh;
-            overflow: hidden;
-        }
-
-        .address {
-            font-weight: 300;
-            font-size: 1.7vh;
-            position: absolute;
-            bottom: 2vw;
-            color: $dark-grey;
-        }
-    }
-}
-
-#action {
-    bottom: 3vw;
-    position: fixed;
-    right: 2vw;
-    width: 15vw;
-
-    @media only all and (min-width: 992px) {
-       display: none;
-    }
-}
-*/
 .header {
   z-index: 100;
   box-shadow: 0 5px 5px 0 rgba(204, 204, 204, 0.7);
@@ -639,12 +565,14 @@ a {
     color: #242424;
     font-family: "Dancing Script", cursive;
     font-size: 6rem;
+    line-height: 6rem;
     display: inline-block;
     float: none;
     margin: 0; }
     @media screen and (max-width: 767px) {
       .header__title {
         font-size: 1.5rem;
+        line-height: 1.5rem;
         margin-top: 7px; } }
   .header__claim {
     float: none;
@@ -672,389 +600,6 @@ a {
         right: 10px;
         top: 15px; } }
 
-/*
-.detailed-view {
-    width: 100vw;
-    min-height: 100vh;
-    background-color: $white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-.detailed-header {
-    height: 10vh;
-    z-index: 11;
-    position: fixed;
-    background-color: $white;
-    width: 100vw;
-}
-
-.detailed-content{
-    position: absolute;
-    top: 10.2vh;
-}
-
-.detailed-logo,
-.detailed-image {
-    position: absolute;
-    top: 0;
-    height: 10vh;
-}
-
-.detailed-logo {
-    left: 2vw;
-    top: 1vh;
-    width: 50vw;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.detailed-image {
-    right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.date-address {
-    background-color: $light-grey;
-    padding: 0.5vh 0;
-    position: relative;
-    display: inline-block;
-    width: 100vw;
-    height: 2.4vh;
-    font-size: 1.8vh;
-}
-
-.detailed-date {
-    position: absolute;
-    left: 1vw;
-}
-
-.detailed-address {
-    float: right;
-    text-align: right;
-    position: absolute;
-    right: 1vw;
-}
-
-.detailed-headline {
-    text-align: center;
-    font-size: 3vh;
-    line-height: 3.5vh;
-    font-weight: 600;
-    margin-top: 2vh;
-}
-
-.cancel,
-.edit {
-    bottom: 3vw;
-    position: fixed;
-    right: 2vw;
-    width: 12vw;
-}
-
-.cancel {
-    right: 44vw;
-}
-
-.full-address-and-time {
-    background-color: $light-grey;
-    width: 96vw;
-    @extend .clearfix;
-    padding: 2vw;
-}
-
-.title {
-    padding-bottom: 1vh;
-    font-size: 2.6vh;
-    padding-top: 2vh;
-    font-weight: 600;
-
-    &:first-child {
-        padding-top: 0;
-    }
-}
-
-.description,
-.more {
-    padding-top: 2vh;
-
-    .title,
-    p {
-        padding-left: 2vw;
-        padding-right: 2vw;
-        margin-top: 0;
-    }
-
-    p {
-        margin-top: 2vh;
-        padding-left: 0;
-    }
-
-    a {
-        &:visited,
-        &:active,
-        &:link {
-            color: $light-blue;
-            font-weight: 600;
-            padding: 2vw;
-        }
-
-        &:hover {
-            color: $blue;
-            text-decoration: underline;
-            font-weight: 600;
-        }
-
-        &:before {
-            content: ' ';
-            background-image: url("../../img/icons/link.svg");
-            width: 4vw;
-            height: 4vh;
-            background-size: 4vw 4vh;
-            display: inline-block;
-            background-repeat: no-repeat;
-            position: relative;
-            top: 1.3vh;
-            margin-right: 1vw;
-        }
-    }
-}
-
-
-*/
-/*
-//login
-
-.modal-view {
-    width: 92vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-    background-color: $black-transparent;
-    padding: 4vw;
-    font-size: 2.6vh;
-
-    .inner-view {
-        border-radius: 5px;
-        background-color: $white;
-        height: 91vh;
-        padding: 3vw;
-        text-align: center;
-    }
-
-    &.create-event-view {
-        height: auto;
-    }
-
-    .headline {
-        font-size: 4vh;
-        line-height: 4vh;
-        font-weight: 600;
-        margin-top: 2vh;
-    }
-
-    .info-text {
-        background-color: $light-grey;
-        border-radius: 5px;
-        padding: 2vh 3vw;
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-
-    form {
-        margin-top: 2vh;
-    }
-
-    label,
-    input {
-        float: left;
-        width: 78vw;
-    }
-
-    label {
-        margin-bottom: 1vh;
-        text-align: left;
-    }
-
-    input {
-        background-color: $very-light-grey;
-        border: none;
-        margin-bottom: 1vh;
-    }
-
-    #email {
-        font-size: 3vh;
-        line-height: 4vh;
-        margin-bottom: 4vh;
-        text-align: left;
-    }
-
-    .submit {
-        width: 55vw;
-        height: 6vh;
-        float: none;
-        display: inline-block;
-        border-radius: 5px;
-        background-color: $light-blue;
-        color: $white;
-
-        &:hover {
-            background-color: $white;
-            color: $light-blue;
-            border: 1px solid $light-blue;
-        }
-    }
-
-    .cancel {
-        top: 5vw;
-        right: 5vw;
-        width: 10vw;
-    }
-}
-
-.legend-box {
-    clear: both;
-    margin-bottom: 1vh;
-    @extend .clearfix;
-
-    .image,
-    .text {
-        float: left;
-        display: block;
-    }
-
-    .image {
-       width: 17vw;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    p {
-        padding-top: 2.3vh;
-    }
-}
-*/
-/*
-.modal-view {
-    form {
-        label {
-            font-size: 10px;
-            line-height: 14px;
-            margin-bottom: 0;
-        }
-
-        input {
-            background-color: $very-light-grey;
-            margin-bottom: 1.5vh;
-            width: 84vw;
-        }
-
-        select {
-            font-size: 2vh;
-            margin-bottom: 1.5vh;
-            background-color: $very-light-grey;
-        }
-
-        option {
-            text-align: center;
-        }
-
-        textarea {
-            width: 84vw;
-            height: 15vw;
-            background-color: $very-light-grey;
-            border: none;
-            margin-bottom: 1.5vh;
-        }
-    }
-
-    .type,
-    .style {
-        width: 42vw;
-        float: left;
-    }
-
-    .type {
-        padding-right: 1vw;
-    }
-
-    .email {
-        span {
-            clear: both;
-            display: block;
-        }
-    }
-
-    .date-headline {
-        text-align: left;
-        font-size: 2.5vh;
-        margin-bottom: 1vh;
-        margin-top: 2vh;
-        font-weight: 600;
-        clear: both;
-    }
-
-    .date-select,
-    .time-select {
-        float: left;
-        width: 16vw;
-        padding-right: 1vw;
-        margin-bottom: 2vh;
-
-        &:last-child {
-            padding-right: 0;
-        }
-
-        label {
-            width: 100%;
-        }
-    }
-
-    .plz,
-    .city-part,
-    .city {
-        float: left;
-        width: 31vw;
-        display: block;
-        padding-right: 1vw;
-
-        input {
-            width: 31vw;
-            float: left;
-            display: block;
-        }
-    }
-
-    .plz {
-        width: 20vw;
-
-        input {
-            width: 20vw;
-        }
-    }
-
-
-    .city {
-        padding-right: 0;
-    }
-
-    &#create-event-modal,
-    &#edit-event-modal {
-        overflow-x: hidden;
-        .inner-view {
-            height: 260vw;
-        }
-    }
-}
-
-
-*/
 .main-navigation {
   clear: both;
   white-space: nowrap;
@@ -1081,7 +626,7 @@ a {
     bottom: 3px; }
   .main-navigation__item {
     float: left;
-    padding: 0;
+    padding: 0 10px 0 0;
     margin-right: 30px;
     font-weight: bold; }
     .main-navigation__item::before {
@@ -1135,6 +680,9 @@ a {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 10px; }
+    @media screen and (max-width: 991px) {
+      .teaser__headline {
+        color: #fff; } }
   .teaser__single {
     width: 280px;
     background-color: #fff;
@@ -1213,6 +761,9 @@ a {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 10px; }
+    @media screen and (max-width: 991px) {
+      .teaser-sidebar__headline {
+        color: #fff; } }
   .teaser-sidebar__single {
     width: 300px;
     background-color: #fff;

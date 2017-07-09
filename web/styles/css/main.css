@@ -835,13 +835,12 @@ a {
     .mobile-menu__link--active {
       color: #ff8c00; }
   .mobile-menu__sub-menu {
-    position: absolute;
     margin-top: 3px;
-    z-index: 101;
     list-style: none;
     background-color: #fff;
     text-align: left;
-    padding: 10px; }
+    padding: 10px 10px 10px 30px;
+    width: 50vw; }
   .mobile-menu__sub-item {
     color: #242424;
     font-size: 1.25rem;

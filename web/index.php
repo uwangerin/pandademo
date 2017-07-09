@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_URI'] == '/spielende-pandas') {
 	$sideteasers = array();
 	$sideteasers[] = array('file'  => 'faul2.jpeg', 'title' => 'Abhängen');
 	$sideteasers[] = array('file'  => 'fress2.jpeg', 'title' => 'Noch mehr Bambus!');
-	$sideteasers[] = array('suess1.jpg', 'title' => 'Sportlicher Panda');
+	$sideteasers[] = array('file'  => 'suess1.jpeg', 'title' => 'Sportlicher Panda');
 
 	echo $twig->render('play.html.twig', array('teasers' => $teasers, 'sideteasers' => $sideteasers));
 }

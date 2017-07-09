@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Pandademo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Gudea:400,400italic,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <script type="text/javascript" language="JavaScript" src="../js/script.js"></script>
+
+
+</head>
+<body>
+
+<div class="site">
+    <div class="main-container">
+ 
+{% include 'includes/header.html.twig' %}
+{% include 'includes/mobile-menu.html.twig' %}
+  
+        <div class="content">
+            <div class="header-image">
+                <img src="../img/panda.jpg" title="Hallo"/>
+            </div>
+
+            <section class="introduction">
+                <h2 class="introduction__title">
+                {% block introtitle %}
+                    Übersicht über liebe Pandas
+                {% endblock %}
+                </h2>
+                <div class="introduction__description">
+                {% block introdescription %}
+                    Dies ist eine Website über ein unglaublich vielseitiges Tier - den Panda!
+                    Entdecken Sie die lustige, verfressende und faule Welt eines ganz besonderen Tieres!
+                {% endblock %}
+                </div>
+            </section>
+
+            <article class="main-content">
+                <div class="teaser">
+                    <div class="teaser-sidebar__headline">
+                        Eine Übersicht
+                    </div>
+                    <div class="teaser__list">
+
+                    {% for teaser in teasers %}
+                       {% include 'includes/teaser.html.twig' %}
+                    {% endfor %}
+
+                 
+                    </div>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="teaser-sidebar">
+                    <div class="teaser-sidebar__headline">
+                        Weitere Pandas
+                    </div>
+                    <div class="teaser-sidebar__list">
+                        {% for teaser in sideteasers %}
+                       {% include 'includes/sidebar-teaser.html.twig' %}
+                    {% endfor %}
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+        {% include 'includes/footer.html.twig' %}
+    </div>
+</div>
+</body>
+</html>

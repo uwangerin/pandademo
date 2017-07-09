@@ -11,16 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../styles/css/main.css">
     <script type="text/javascript" language="JavaScript" src="../js/script.js"></script>
-
-
 </head>
 <body>
 
 <div class="site">
     <div class="main-container">
 
-{% include 'includes/header.html.twig' %}
-{% include 'includes/mobile-menu.html.twig' %}
+        {% include 'includes/header.html.twig' %}
+        {% include 'includes/mobile-menu.html.twig' %}
 
         <div class="content">
             <div class="header-image">
@@ -29,15 +27,15 @@
 
             <section class="introduction">
                 <h2 class="introduction__title">
-                {% block introtitle %}
-                    Übersicht über liebe Pandas
-                {% endblock %}
+                    {% block introtitle %}
+                        Übersicht über liebe Pandas
+                    {% endblock %}
                 </h2>
                 <div class="introduction__description">
-                {% block introdescription %}
-                    Dies ist eine Website über ein unglaublich vielseitiges Tier - den Panda!
-                    Entdecken Sie die lustige, verfressende und faule Welt eines ganz besonderen Tieres!
-                {% endblock %}
+                    {% block introdescription %}
+                        Dies ist eine Website über ein unglaublich vielseitiges Tier - den Panda!
+                        Entdecken Sie die lustige, verfressende und faule Welt eines ganz besonderen Tieres!
+                    {% endblock %}
                 </div>
             </section>
 
@@ -47,11 +45,9 @@
                         Eine Übersicht
                     </div>
                     <div class="teaser__list">
-
-                    {% for teaser in teasers %}
-                       {% include 'includes/teaser.html.twig' %}
-                    {% endfor %}
-
+                        {% for teaser in teasers %}
+                            {% include 'includes/teaser.html.twig' %}
+                        {% endfor %}
                     </div>
                 </div>
             </article>
@@ -63,9 +59,8 @@
                     </div>
                     <div class="teaser-sidebar__list">
                         {% for teaser in sideteasers %}
-                       {% include 'includes/sidebar-teaser.html.twig' %}
-                    {% endfor %}
-
+                            {% include 'includes/sidebar-teaser.html.twig' %}
+                        {% endfor %}
                     </div>
                 </div>
             </aside>
